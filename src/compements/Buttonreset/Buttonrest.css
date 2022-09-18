@@ -1,9 +1,9 @@
 
 .reset {
   display: grid;
-  background-color: rgb(243, 61, 29);
+  background-color: rgb(115, 243, 29);
 }
 
 .reset:hover {
-  background-color: rgb(228, 39, 15);
+  background-color: rgb(15, 100, 228);
 }
