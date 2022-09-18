@@ -5,7 +5,6 @@ import MagnicientEgal from '../magnicientEgal/MagnicientEgal';
 import MagnificNumber from '../magnumber/MagnificNumber';
 import BeautiFullscreen from '../screeninput/BeautiFullscreen';
 import Title from '../title/Title';
-import './Calculator.css';
 
 
 function Calculator() {
@@ -31,16 +30,17 @@ const lecalcul=()=>{
 
   
   return (
-    <div className="gird-wrapper">
+    <div className="wrapper ">
       
           <Title/>
-          <div className="head">
+          <div class="head">
           <BeautiFullscreen  inputNumber={number} inputResults={results} numberChange={(e)=>setNumber(e.target.value)} resultsChange={(e)=>setResults(e.target.value)} />
-          <MagnificNumber buttonClick={(e)=>handleClick(e)} />
           <div>
-          <GreanOperationklk  buttonClick={(e)=>handleClick(e)}/>
-          <MagnicientEgal  buttonClick={()=>lecalcul()}/>
-          <Buttonrest resetClick={() => {setResults(0);setNumber(0);}}/>
+          <MagnificNumber class="chiffre" buttonClick={(e)=>handleClick(e)} />
+
+          <GreanOperationklk class="operations" buttonClick={(e)=>handleClick(e)}/>
+          <MagnicientEgal class="egal" buttonClick={()=>lecalcul()}/>
+          <Buttonrest class="operation" resetClick={() => {setResults(0);setNumber(0);}}/>
 
          </div>
           </div>

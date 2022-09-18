@@ -1,6 +1,9 @@
-.calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-  }
+
+.reset {
+  display: grid;
+  background-color: rgb(243, 61, 29);
+}
+
+.reset:hover {
+  background-color: rgb(228, 39, 15);
+}

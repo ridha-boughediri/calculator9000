@@ -1,9 +1,8 @@
 import React from 'react'
-import './Title.css'
 
 function Title() {
   return (
-    <div>
+    <div class="head">
         <h1>Calculator9000</h1>
     </div>
   )

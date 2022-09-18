@@ -1,9 +1,9 @@
 import React from 'react'
-import './MagnicientEgal.css'
+import './Equal.css';
 
 function MagnicientEgal({buttonClick}) {
   return (
-    <div className="equal-sign"> <button  value={"="} onClick={buttonClick} className="number" >=</button></div>
+    <div className="equals"> <button  value={"="} onClick={buttonClick} className="number" >=</button></div>
   )
 }
 
